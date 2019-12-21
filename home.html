@@ -1,12 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Mestre Dos Códigos - Frontend</title>
-</head>
-<body>
-  <div class="header">opa</div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mestre Dos Códigos - Frontend</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- Header com logo da aplicação, itens do menu e item de menu do usuário (avatar). 
+    O Header deve ter fundo transparente quando o scroll da página estiver no topo e alterar para um fundo opaco quando for realizado o scroll
+  Um item principal em destaque
+  Listagem dos itens organizados em Carrossel
+  Footer contendo informações do desenvolvedor -->
+    <div class="home-container" onscroll="isScrolling()">
+      <header id="header" class="header">
+        <div class="header__left">
+          <i class="header__icon material-icons">menu</i>
+          <img class="header__logo" src="./img/Netflix_logo.svg" alt="logo">
+          <ul class="header__list">
+            <li class="header__item header__item_active">
+              <span class="header__span">Início</span>
+            </li>
+            <li class="header__item">
+              <span class="header__span">Séries</span>
+            </li>
+            <li class="header__item">
+              <span class="header__span">Filmes</span>
+            </li>
+            <li class="header__item">
+              <span class="header__span">Mais Recentes</span>
+            </li>
+            <li class="header__item">
+              <span class="header__span">Minha Lista</span>
+            </li>
+          </ul>
+        </div>
+        <div class="header__right">
+          <img class="header__avatar" src="./img/me.jpg" alt="user">
+        </div>
+      </header>
+      <main class="main">
+        
+      </main>
+      <footer class="footer"></footer>
+    </div>
+  </body>
+  <script src="./js/main.js"></script>
 </html>

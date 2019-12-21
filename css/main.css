@@ -1,0 +1,140 @@
+
+
+.home-container {
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-areas: "header" "main" "footer";
+  font-family: 'Helvetica Neue';
+  background-color: #141414;
+}
+
+.home-container >
+  .header {
+    grid-area: header;
+  }
+  .main {
+    grid-area: main;
+  }
+  .footer {
+    grid-area: footer;
+  }
+
+
+.header.opaque {
+  background: #000;
+  position: sticky;
+  top: 0;
+  transition: .9s all ease;
+}
+.header {
+  transition: .9s all ease;
+  position: relative;
+  background: rgba(#000, .3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  padding: 0 20px;
+}
+.header__left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__logo {
+  width: 70px;
+  position: absolute;
+  left: 55px;
+}
+.header__list {
+  list-style: none;
+  display: flex;
+}
+.header__item {
+  color: #fff;
+  margin-right: 20px;
+  opacity: .5;
+}
+.header__item_active {
+  opacity: 1;
+}
+.header__avatar {
+  height: 35px;
+  border-radius: 50%;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header__span {
+  display: none;
+}
+.header__icon {
+  color: #fff;
+  position: absolute;
+  left: 15px;
+}
+
+.main {
+  height: 100vh;
+}
+
+.footer {
+  background: #000;
+  height: 70px;
+}
+
+/* sm */
+@media (min-width: 600px) {
+  .header {
+    /* background: rgb(214, 42, 42); */
+    height: 65px;
+  }
+  .footer {
+    height: 85px;
+  }
+}
+
+/* md */
+@media (min-width: 960px) {
+  .header {
+    justify-content: space-between;
+  }
+  .header__left {
+    justify-content: flex-start;
+  }
+  .header__list {
+    margin-left: 10px
+  }
+  .header__span {
+    display: initial;
+    font-size: 11px;
+  }
+  .header__icon {
+    display: none;
+  }
+  .header__logo {
+    position: relative;
+    left: 20px;
+    width: 90px;
+  }
+  .header__avatar {
+    height: 40px;
+  }
+}
+
+/* lg */
+@media (min-width: 1264px) {
+  .header {
+    padding: 0 30px;
+  }
+  .header__list {
+    margin-left: 20px
+  }
+  .header__span {
+    font-size: 14px;
+  }
+  .header__avatar {
+    right: 30px;
+  }
+}

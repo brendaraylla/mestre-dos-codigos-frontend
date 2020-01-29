@@ -7,44 +7,42 @@
     <title>Mestre Dos Códigos - Frontend</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/footer.css" />
   </head>
   <body>
-    <!-- Header com logo da aplicação, itens do menu e item de menu do usuário (avatar). 
-    O Header deve ter fundo transparente quando o scroll da página estiver no topo e alterar para um fundo opaco quando for realizado o scroll
-  Um item principal em destaque
-  Listagem dos itens organizados em Carrossel
-  Footer contendo informações do desenvolvedor -->
     <div class="home-container">
       <header id="header" class="header">
-        <div class="header__left">
+        <div class="header__options">
           <i class="header__icon material-icons">menu</i>
           <img class="header__logo" src="./img/Netflix_logo.svg" alt="logo">
           <ul class="header__list">
             <li class="header__item header__item_active">
-              <span class="header__span">Início</span>
+              <a class="header__span">Início</a>
             </li>
             <li class="header__item">
-              <span class="header__span">Séries</span>
+              <a class="header__span">Séries</a>
             </li>
             <li class="header__item">
-              <span class="header__span">Filmes</span>
+              <a class="header__span">Filmes</a>
             </li>
             <li class="header__item">
-              <span class="header__span">Mais Recentes</span>
+              <a class="header__span">Mais Recentes</a>
             </li>
             <li class="header__item">
-              <span class="header__span">Minha Lista</span>
+              <a class="header__span">Minha Lista</a>
             </li>
           </ul>
         </div>
-        <div class="header__right">
-          <img class="header__avatar" src="./img/me.jpg" alt="user">
+        <div class="header__avatar">
+          <img class="header__image-avatar" src="./img/me.jpg" alt="user">
         </div>
-      </header>
+      </header id="header">
       <main class="main">
         <div class="main__content-full-image" 
-             style="background: url(https://www.itl.cat/pics/b/31/314525_background-wallpaper-hd.jpg) no-repeat center center; background-size: cover; width: 100%;">
+              style="background: url(https://www.itl.cat/pics/b/31/314525_background-wallpaper-hd.jpg) no-repeat center center; background-size: cover; width: 100%;">
         </div>
         <div class="main__container">
           <h2>Populares na Netflix</h2>
@@ -135,8 +133,15 @@
           </section>
         </div>
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div>TESTE</div>
+      </footer>
     </div>
+    <!-- Header com logo da aplicação, itens do menu e item de menu do usuário (avatar). 
+    O Header deve ter fundo transparente quando o scroll da página estiver no topo e alterar para um fundo opaco quando for realizado o scroll
+    Um item principal em destaque
+    Listagem dos itens organizados em Carrossel
+    Footer contendo informações do desenvolvedor -->
   </body>
   <script src="./js/main.js"></script>
 </html>

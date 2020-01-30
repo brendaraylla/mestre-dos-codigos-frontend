@@ -12,14 +12,14 @@ h2 {
   margin-bottom: 0;
   color: #E5E5E5;
   font-size: 12px;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
 button {
   background: rgba(20, 20, 20, 0.5);
   border: none;
   cursor: pointer;
-  z-index: 2;
+  z-index: 1;
 }
 button:focus {
   outline: none;
@@ -40,7 +40,7 @@ ul {
   h2 {
     font-size: 1.4vw;
     padding: 0 40px;
-    /* color: #E5E5E5; */
+    margin-bottom: 7px;
   }
 }
 

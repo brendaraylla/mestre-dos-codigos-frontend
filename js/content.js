@@ -224,8 +224,6 @@ var data = [
 ];
 
 window.onload = function() {
-  console.log(data);
-
   const container = document.querySelector('.main__container');
 
   data.forEach((obj, index) => {
@@ -238,7 +236,7 @@ window.onload = function() {
     container.appendChild(sectionContent);
   
     const buttonLeft = document.createElement("button");
-    buttonLeft.classList.add("main__icon-left", index);
+    buttonLeft.classList.add("btn", "main__icon-left", index);
     buttonLeft.addEventListener("click", () => goToLeft(index)); 
     sectionContent.appendChild(buttonLeft);
     const iconLeft = document.createElement("img");
@@ -246,7 +244,7 @@ window.onload = function() {
     buttonLeft.appendChild(iconLeft);
     
     const buttonRight = document.createElement("button");
-    buttonRight.classList.add("main__icon-right", index);
+    buttonRight.classList.add("btn", "main__icon-right", index);
     buttonRight.addEventListener("click", () => goToRight(index)); 
     sectionContent.appendChild(buttonRight);
     const iconRight = document.createElement("img");
@@ -254,7 +252,7 @@ window.onload = function() {
     buttonRight.appendChild(iconRight);
     
     const sectionImage = document.createElement("section");
-    sectionImage.classList.add("main__popular", 'section-image', `section-image-${index}`);
+    sectionImage.classList.add('section-image', `section-image-${index}`);
     sectionContent.appendChild(sectionImage);
     
     const ul = document.createElement("ul");

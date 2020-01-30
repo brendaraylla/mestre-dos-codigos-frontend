@@ -8,3 +8,18 @@ function myFunction() {
     document.getElementById("header").classList.remove("header-opaque");
   }
 }
+
+function goToRight(index) {
+  const section = document.querySelector(`.section-image-${index}`);
+  if (section) {
+    const contentWidth = section.clientWidth;
+    section.scrollLeft += contentWidth;
+  }
+}
+function goToLeft(index) {
+  const section = document.querySelector(`.section-image-${index}`);
+  if (section) {
+    const contentWidth = section.clientWidth;
+    section.scrollLeft -= contentWidth;
+  }
+}

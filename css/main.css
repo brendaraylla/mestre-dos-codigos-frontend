@@ -13,6 +13,7 @@
   opacity: 1;
 }
 .btn {
+  background: rgba(20, 20, 20, 0.5);
   opacity: 0;
   transition: .3s all ease;
 }
@@ -47,10 +48,84 @@
   margin-left: 18px;
   transform: scale(1.2);
 }
+
 .main__content-full-image {
   height: 200px;
-  filter: brightness(80%);
+  position: relative;
+  filter: brightness(90%);
 }
+.main__text-image {
+  color: #fff;
+  position: absolute;
+  top: 22%;
+  left: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.main__focus-image {
+  height: auto;
+  width: 120px;
+}
+.main__focus-title {
+  margin-bottom: 3px;
+  font-size: 7px;
+}
+.main__focus-text {
+  margin: 0;
+  font-size: 5px;
+}
+.main__actions {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+.main__action-btn {
+  margin-right: 5px;
+  border-radius: 2px;
+  font-size: 5px;
+  color: #fff;
+  background-color:rgba(51, 51, 51, 0.4);
+  padding: 0 20px;
+  transition: .2s all ease;
+}
+.main__action-btn:hover {
+  color: #000;
+  background-color: rgb(230, 230, 230);
+  transform: scale(1.05);
+}
+.main__minimum-age {
+  position: absolute;
+  right: 0;
+  top: 60%;
+  height: 9px;
+  width: 29px;
+  background: rgba(51, 51, 51, 0.6);
+  display: flex;
+  align-items: center;
+}
+.main__minimum-age:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  background: #fff;
+  height: inherit;
+  width: 1px;
+}
+.main__age-text {
+  margin-left: 5px;
+  border-radius: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 9px;
+  width: 9px;
+  background-color: #2e88bd;
+  color: #fff;
+  font-weight: bold;
+  font-size: 5px;
+}
+
 .main__container {
   position: relative;
   top: -60px;
@@ -62,8 +137,49 @@
 
 /* sm */
 @media (min-width: 600px) {
+  .section-image {
+    padding: 0 25px;
+  }
+
   .main__content-full-image {
     height: 380px;
+  }
+
+  .main__text-image {
+    left: 25px;
+  }
+  .main__focus-image {
+    width: 260px;
+  }
+  .main__focus-title {
+    font-size: 12px;
+  }
+  .main__focus-text {
+    font-size: 11px;
+  }
+  .main__actions {
+    margin-top: 10px;
+  }
+  .main__action-btn {
+    margin-right: 15px;
+    padding: 6px 19px;
+    font-size: 9px;
+  }
+
+  .main__minimum-age {
+    height: 20px;
+    width: 56px;
+    top: 70%;
+  }
+  .main__minimum-age:before {
+    width: 2px;
+  }
+  .main__age-text {
+    border-radius: 3px;
+    margin-left: 10px;
+    height: 18px;
+    width: 18px;
+    font-size: 9px;
   }
 }
 
@@ -87,7 +203,40 @@
   .main__container {
     top: -180px;
   }
+
+  .main__text-image {
+    left: 40px;
+  }
+  .main__focus-image {
+    width: 320px;
+  }
+  .main__focus-title {
+    font-size: 16px;
+  }
+  .main__focus-text {
+    font-size: 14px;
+  }
+  .main__actions {
+    margin-top: 10px;
+  }
+  .main__action-btn {
+    margin-right: 15px;
+    font-size: 12px;
+  }
   
+  .main__minimum-age {
+    height: 25px;
+    width: 74px;
+    top: 60%;
+  }
+  .main__minimum-age:before {
+    width: 2px;
+  }
+  .main__age-text {
+    height: 23px;
+    width: 23px;
+    font-size: 11px;
+  }
 }
 
 /* lg */
@@ -107,6 +256,42 @@
     margin-left: 84px;
     transform: scale(1.7);
   }
+
+  .main__text-image {
+    left: 60px;
+    top: 19%;
+  }
+  .main__focus-image {
+    width: 480px;
+  }
+  .main__focus-title {
+    font-size: 23px;
+    margin-bottom: 20px;
+  }
+  .main__focus-text {
+    font-size: 20px;
+  }
+  .main__actions {
+    margin-top: 20px;
+  }
+  .main__action-btn {
+    margin-right: 15px;
+    font-size: 16px;
+    padding: 11px 36px;
+  }
+
+  .main__minimum-age {
+    height: 36px;
+    width: 100px;
+  }
+  .main__minimum-age:before {
+    width: 3px;
+  }
+  .main__age-text {
+    height: 33px;
+    width: 33px;
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 1441px) {
@@ -122,5 +307,35 @@
   .main__item-img:hover { 
     margin-right: 150px;
     margin-left: 148px;
+  }
+
+  .main__focus-image {
+    width: 820px;
+  }
+  .main__focus-title {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .main__focus-text {
+    font-size: 35px;
+  }
+  .main__action-btn {
+    margin-right: 25px;
+    font-size: 28px;
+    padding: 21px 64px;
+  }
+  .main__minimum-age {
+    height: 61px;
+    width: 180px;
+    top: 70%;
+  }
+  .main__minimum-age:before {
+    width: 3px;
+  }
+  .main__age-text {
+    margin-left: 30px;
+    height: 59px;
+    width: 59px;
+    font-size: 32px;
   }
 }

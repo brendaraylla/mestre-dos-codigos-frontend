@@ -59,6 +59,15 @@
   left: 15px;
 }
 
+@media (min-width: 600px) {
+  .header__icon {
+    left: 25px;
+  }
+  .header__avatar {
+    right: 25px;
+  }
+}
+
 @media (min-width: 960px) {
 
   .header {

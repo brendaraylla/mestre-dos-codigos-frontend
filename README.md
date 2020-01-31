@@ -1,5 +1,8 @@
 
 # DB1 Mestre dos Códigos - Frontend
+
+[Projeto Netflix](https://brendaraylla.github.io/mestre-dos-codigos-frontend/home.html)
+
 ## Perguntas Escudeiro
 
 ### 1. Explique com suas palavras a diferença entre a utilização de var, const e let?
